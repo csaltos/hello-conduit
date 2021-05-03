@@ -1,14 +1,26 @@
-# Response Either How ?
+# API JSON calls with Haskell
 
-At the file app/Main.hs you may found an HTTP with an either response
-but the match cases are not as simple as Left and Right.
+## What ?
 
-What are the match cases to use ?
+A simple project showing how to make calls to an API and parsing JSON using
+HTTP Conduit and Aeson.
 
-## Notes
+## Why ?
 
-* This code is based on the HTTP Conduit tutorial at https://github.com/snoyberg/http-client/blob/master/TUTORIAL.md
+Because JSON is very popular and use it with Haskell is really cool.
 
-* The type of the response and source code can be found at https://hackage.haskell.org/package/http-conduit-2.3.8/docs/Network-HTTP-Simple.html#v:httpJSONEither
+## How ?
 
-Thank you for your help !!
+Take a look to app/Main.hs and run it with the commands:
+
+```bash
+cd hello-conduit
+cabal build
+cabal exec -- hello-conduit
+```
+
+## Where ?
+
+This sample is based in the tutorial at https://github.com/snoyberg/http-client/blob/master/TUTORIAL.md
+
+Some documentation can be found at https://hackage.haskell.org/package/http-conduit-2.3.8/docs/Network-HTTP-Simple.html

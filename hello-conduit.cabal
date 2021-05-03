@@ -32,6 +32,8 @@ executable hello-conduit
     build-depends:    base
                       , aeson
                       , http-conduit
+                      , bytestring
+                      , text
     extensions:       OverloadedStrings
     hs-source-dirs:   app
     default-language: Haskell2010
